@@ -1511,30 +1511,6 @@ class ReactImageLightbox extends Component {
                                 <li key={i} className={`ril-toolbar__item ${styles.toolbarItem}`}>{button}</li>
                             ))}
 
-                            {enableZoom &&
-                                <li className={`ril-toolbar__item ${styles.toolbarItem}`}>
-                                    <button // Lightbox zoom in button
-                                        type="button"
-                                        key="zoom-in"
-                                        aria-label={this.props.zoomInLabel}
-                                        className={`ril-zoom-in ${zoomInButtonClasses.join(' ')}`}
-                                        onClick={zoomInButtonHandler}
-                                    />
-                                </li>
-                            }
-
-                            {enableZoom &&
-                                <li className={`ril-toolbar__item ${styles.toolbarItem}`}>
-                                    <button // Lightbox zoom out button
-                                        type="button"
-                                        key="zoom-out"
-                                        aria-label={this.props.zoomOutLabel}
-                                        className={`ril-zoom-out ${zoomOutButtonClasses.join(' ')}`}
-                                        onClick={zoomOutButtonHandler}
-                                    />
-                                </li>
-                            }
-
                             <li className={`ril-toolbar__item ${styles.toolbarItem}`}>
                                 <button // Lightbox close button
                                     type="button"
